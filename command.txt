@@ -17,6 +17,7 @@ sudo pip3 install mage-ai --break-system-packages
 
 # Start mage 
 mage start demo_project
+export GIT_PYTHON_REFRESH=quiet
 mage start uber-analytics-engineer-project
 
 # Install Pandas
