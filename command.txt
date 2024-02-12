@@ -17,11 +17,12 @@ sudo pip3 install mage-ai --break-system-packages
 
 # Start mage 
 mage start demo_project
+mage start uber-analytics-engineer-project
 
 # Install Pandas
 sudo pip3 install pandas --break-system-packages
 
 # Install Google Cloud Library
-sudo pip3 install google-cloud
+sudo pip3 install google-cloud --break-system-packages
 
-sudo pip3 install google-cloud-bigquery 
+sudo pip3 install google-cloud-bigquery --break-system-packages
