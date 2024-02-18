@@ -1,17 +1,18 @@
 CREATE OR REPLACE TABLE `technical-test_project.uber_dataset.tbl_analysis_report` AS (
 SELECT
-  f.VendorID
-  , f.tpep_pickup_datetime
-  , f.tpep_dropoff_datetime
+  f.trip_id 
+  , f.VendorID
+  , d.tpep_pickup_datetime
+  , d.tpep_dropoff_datetime
   , p.passenger_count
   , td.trip_distance
-  , rc.RatecodeID
+  , rc.rate_code_name
   , f.store_and_fwd_flag
   , pl.pickup_latitude
   , pl.pickup_longitude
   , dl.dropoff_latitude
   , dl.dropoff_longitude
-  , pt.payment_type
+  , pt.payment_type_name
   , f.fare_amount
   , f.extra
   , f.mta_tax
@@ -20,6 +21,7 @@ SELECT
   , f.improvement_surcharge
   , f.total_amount
 FROM`technical-test_project.uber_dataset.fact_table` f
+JOIN `technical-test_project.uber_dataset.datetime_dim` d  ON f.datetime_id=d.datetime_id
 JOIN `technical-test_project.uber_dataset.passenger_count_dim` p ON f.passenger_count_id = p.passenger_count_id
 JOIN `technical-test_project.uber_dataset.trip_distance_dim` td ON f.trip_distance_id = td.trip_distance_id
 JOIN `technical-test_project.uber_dataset.rate_code_dim` rc ON f.rate_code_id = rc.rate_code_id
