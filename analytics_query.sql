@@ -20,7 +20,7 @@ SELECT
   , f.tolls_amount
   , f.improvement_surcharge
   , f.total_amount
-FROM`technical-test_project.uber_dataset.fact_table` f
+FROM `technical-test_project.uber_dataset.fact_table` f
 JOIN `technical-test_project.uber_dataset.datetime_dim` d  ON f.datetime_id=d.datetime_id
 JOIN `technical-test_project.uber_dataset.passenger_count_dim` p ON f.passenger_count_id = p.passenger_count_id
 JOIN `technical-test_project.uber_dataset.trip_distance_dim` td ON f.trip_distance_id = td.trip_distance_id
