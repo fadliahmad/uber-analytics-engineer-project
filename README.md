@@ -70,4 +70,5 @@ More info about the dataset can be found here:
 Big thanks to Darshil Parmar for this amazing project tutorial. 
 
 You can find the full tutorial for this project at: https://www.youtube.com/watch?v=WpQECq5Hx9g&ab_channel=DarshilParmar 
+
 You can find his GitHub profile here: https://github.com/darshilparmar 
