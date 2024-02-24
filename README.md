@@ -6,6 +6,7 @@ The goal of this project is to perform end-to-end data engineer analytics on Ube
 Executive summary: 
 
 🔧 What I do:
+
     📥 Importing and load the dataset into Google Cloud Storage
     🐍 Creating a python notebook for data extraction and transformation
     🖥️ Creating a virtual machine instance to run Mage.ai pipeline tools
@@ -21,6 +22,7 @@ Executive summary:
 
 ## Tools 
 🔧 Tools I used in this project:
+
     🖥️ Google Cloud Platform
         - Google Cloud Storage 
         - Google Compute Engine 
@@ -45,19 +47,19 @@ More info about dataset can be found here:
 
 ## Creating Google Cloud Storage Bucket 
 📥 Its an online file storage which is provided as a service by GCP. It helps us store, retrieve files from anywhere in the cloud with an internet connection.
-<img src="img/Google Cloud Storage - Bucket.png>
+<img src="img/Google Cloud Storage - Bucket.png">
 
 ## Creating Virtual Machine Instance to Run Mage.ai 
 🖥️ Its the part of the GCP suite that helps us run virtual machines to run our applications. 
-<img src="img/Vm Instance.png> 
+<img src="img/Vm Instance.png"> 
 
 ## Creating Virtual Machine Instance to Run Mage.ai 
 🧙‍♂️ Mage is the latest open source tool to set up your ETL pipeline. This tools helps you with focussing only your business logic using certain existing templates it provides to — ‘load’,’transform’ and ‘extract’ the data. 
-<img src="img/mage pipeline.png> 
+<img src="img/mage pipeline.png"> 
 
 ## Managing data warehouse in BigQuery 
 🏭 Its a warehouse provided by Google which helps us store, analyse large scale data sets using a SQL type interface and query language. 
-<img src="img/BigQuery.png> 
+<img src="img/BigQuery.png"> 
 
 ## Dashboard 
 🔍 Dashboard result: 
